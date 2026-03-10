@@ -32,4 +32,9 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    #course_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing);
+    }
 }

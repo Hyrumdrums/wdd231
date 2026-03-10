@@ -151,3 +151,34 @@ footer {
     background-color: var(--primary-color);
     color: var(--primary-text);
 }
+
+#course_filters {
+    display: flex;
+    gap: 8px;;
+    padding: var(--padding);
+    justify-content: center;
+}
+
+#course_filters button {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#course_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: var(--padding);
+}
+
+#course_list div {
+    background-color: var(--primary-text);
+    color: var(--accent-3);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
