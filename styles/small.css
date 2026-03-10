@@ -4,6 +4,8 @@
     --accent-1: #255c99; /* blue */
     --accent-2: #7ea3cc; /* light blue */
     --accent-3: #ccad8f; /* tan */
+
+    --spacing: 20px;
 }
 
 * {
@@ -79,4 +81,60 @@ header span {
 
 .navigation ul {
     display: flex;
+}
+
+main h1 {
+    margin: 8px 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing);
+}
+
+section.card {
+    background-color: var(--accent-2);
+    /* padding: 20px; */
+    border-radius: 8px;
+    margin-bottom: var(--spacing);
+}
+
+section.card h2 {
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    padding: 10px 12px;
+    text-align: center;
+}
+
+section.card p {
+    padding: 0 10px 10px;
+    line-height: 1.5;
+}
+
+section.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 0% 10px 10px;
+}
+
+.note {
+    width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--primary-text);
 }
