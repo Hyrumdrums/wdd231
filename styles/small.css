@@ -182,3 +182,7 @@ footer {
     border-radius: 4px;
     text-align: center;
 }
+
+#course_list div.not-completed {
+    opacity: 0.5;
+}

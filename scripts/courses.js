@@ -88,8 +88,16 @@ function displayCourses(subject) {
     // create listings
     filteredCourses.forEach(course => {
         const courseItem = document.createElement('div');
-        const status = course.completed ? '✓' : '✗';
+        let status;
+        if(course.completed) {
+            courseItem.classList.add('completed');
+            status = '✓';
+        } else {
+            courseItem.classList.add('not-completed');
+            status = '✗';
+        }
         courseItem.textContent = `${status} ${course.subject} ${course.number}`;
+        courseItem.title = course.description;
         courseList.appendChild(courseItem);
     });
 
