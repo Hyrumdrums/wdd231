@@ -19,7 +19,6 @@
     
     /* google fonts */
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -40,7 +39,6 @@ header {
 
 header img {
     display: block;
-    width: 100%;
     width: 35px;
     max-width: 50px;
     height: auto;
