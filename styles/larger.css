@@ -17,10 +17,15 @@
     .navigation ul {
         /* no bullets */
         list-style: none;
+        flex-direction: row;
     }
     
     .navigation li {
         padding: 10px;
+    }
+
+    .navigation li:hover {
+        background-color: var(--accent-1);
     }
 
     .two-column {
