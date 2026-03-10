@@ -1,9 +1,12 @@
 :root {
-    --primary-color: #b3001b; /* red */
-    --primary-text: #262626; /* black */
-    --accent-1: #255c99; /* blue */
-    --accent-2: #7ea3cc; /* light blue */
-    --accent-3: #ccad8f; /* tan */
+    
+    /* #d36778, #7f7f7f, #819ebf, #bec9d7, #d8cfc5 */
+    
+    --primary-color: #ca8c95; /* red */
+    --primary-text: #000000; /* black */
+    --accent-1: #819ebf; /* blue */
+    --accent-2: #bec9d7; /* light blue */
+    --accent-3: #d8cfc5; /* light tan */
 
     --spacing: 20px;
     --padding: 10px;
@@ -184,5 +187,6 @@ footer {
 }
 
 #course_list div.not-completed {
-    opacity: 0.5;
+    background-color: var(--accent-1);
+    color: var(--primary-text);
 }
