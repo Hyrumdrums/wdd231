@@ -1,0 +1,33 @@
+A wireframe is provided, as well as most of the site requirements. Here's the color scheme.
+
+from coolors.co
+
+- CSV
+
+b3001b,262626,255c99,7ea3cc,ccad8f
+
+- With #
+
+#b3001b, #262626, #255c99, #7ea3cc, #ccad8f
+
+- Array
+
+["b3001b","262626","255c99","7ea3cc","ccad8f"]
+
+- Object
+
+{"Mahogany Red":"b3001b","Carbon Black":"262626","Baltic Blue":"255c99","Wisteria Blue":"7ea3cc","Tan":"ccad8f"}
+
+- Extended Array
+
+[{"name":"Mahogany Red","hex":"b3001b","rgb":[179,0,27],"cmyk":[0,100,85,30],"hsb":[351,100,70],"hsl":[351,100,35],"lab":[37,62,40]},{"name":"Carbon Black","hex":"262626","rgb":[38,38,38],"cmyk":[0,0,0,85],"hsb":[0,0,15],"hsl":[0,0,15],"lab":[15,0,0]},{"name":"Baltic Blue","hex":"255c99","rgb":[37,92,153],"cmyk":[76,40,0,40],"hsb":[212,76,60],"hsl":[212,61,37],"lab":[38,4,-39]},{"name":"Wisteria Blue","hex":"7ea3cc","rgb":[126,163,204],"cmyk":[38,20,0,20],"hsb":[212,38,80],"hsl":[212,43,65],"lab":[66,-2,-25]},{"name":"Tan","hex":"ccad8f","rgb":[204,173,143],"cmyk":[0,15,30,20],"hsb":[30,30,80],"hsl":[30,37,68],"lab":[73,7,20]}]
+
+- XML
+
+<palette>
+  <color name="Mahogany Red" hex="b3001b" r="179" g="0" b="27" />
+  <color name="Carbon Black" hex="262626" r="38" g="38" b="38" />
+  <color name="Baltic Blue" hex="255c99" r="37" g="92" b="153" />
+  <color name="Wisteria Blue" hex="7ea3cc" r="126" g="163" b="204" />
+  <color name="Tan" hex="ccad8f" r="204" g="173" b="143" />
+</palette>

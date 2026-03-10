@@ -4,15 +4,23 @@ deep slate blue #3D405B
 */
 
 :root {
-    --color-primary: #E07A5F;
-    --color-secondary: #3D405B;
+    --primary-color: #b3001b; /* red */
+    --primary-text: #262626; /* black */
+    --accent-1: #255c99; /* blue */
+    --accent-2: #7ea3cc; /* light blue */
+    --accent-3: #ccad8f; /* tan */
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    /* google fonts */
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* header */
@@ -35,14 +43,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: var(--color-secondary);
+    color: var(--primary-text);
 }
 
 /* hamburger nav */
 .hamburger {
     background: none;
     border: none;
-    color: var(--color-primary);
+    color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }

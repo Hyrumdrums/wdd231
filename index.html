@@ -8,25 +8,63 @@
     <meta name="author" content="Dallin Layton">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="14" height="14">
-        <span>Dallin's Site Title</span>
+        <img src="images/dallinlaytonlogo.png" alt="Site Logo" width="14" height="14">
+        <span>Dallin Layton</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-          <li class="current"><a href="#">News & Events</a></li>
-          <li><a href="#">Dedicated Temples</a></li>
-          <li><a href="#">Announced Temples</a></li>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Final</a></li>
         </ul>
       </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>Home</h1>
+        <div class="2-column">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Dallin is an Eagle Scout who loves to code. He is creative and likes to tinker in the garage. He is recognized as a peacemaker. When in a leadership position, Dallin is a guy people can talk to.</p>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Dallin Layton" width="200" height="200">
+            </section>
+        </div>
+        <section class="card">
+            <h2>Web Certificate Courses</h2>
+            <!-- todo 6 items -->
+             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam dolorem sapiente corporis repellendus harum deleniti incidunt officia ipsa laborum numquam necessitatibus eos aliquid vel voluptatem, illo at ullam qui!</div>
+        </section>
+        <div class="note">The total credits for course listed above are <span id="course_credits">2</span></div>
+        <div class="social-links">
+            <a href="https://www.dallinlayton.com/" title="Personal Website">
+                <img src="images/dallinlaytonlogo.png" alt="dallinlayton.com" width="32" height="32">
+            </a>
+            <a href="https://github.com/Hyrumdrums" title="GitHub">
+                <img src="images/github.png" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/dallin-layton-652031115/" title="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn" width="32" height="32">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> | Dallin Layton | USA</p>
+        <p id="lastModified"></p>
+      </footer>
 </body>
 </html>
