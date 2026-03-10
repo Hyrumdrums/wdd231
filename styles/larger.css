@@ -11,5 +11,21 @@
 
     .navigation {
         display: block;
-    }   
+        background-color: var(--primary-color);
+    }
+    
+    .navigation ul {
+        /* no bullets */
+        list-style: none;
+    }
+    
+    .navigation li {
+        padding: 10px;
+    }
+
+    .navigation a {
+        color: var(--primary-text);
+        text-decoration: none;
+    }
+
 }

@@ -18,6 +18,11 @@
     font-style: normal;
 }
 
+body {
+    background-color: var(--accent-3);
+    color: var(--primary-text);
+}
+
 /* header */
 
 header {

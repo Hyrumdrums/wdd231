@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" rx="30" ry="20" fill="#255c99"/>
+
+  <!-- Centered Text -->
+  <text
+    transform="translate(100 100)"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Impact, Arial Black, sans-serif"
+    font-size="125"
+    fill="#262626">
+    DL
+  </text>
+</svg>
