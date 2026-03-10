@@ -23,9 +23,8 @@
         padding: 10px;
     }
 
-    .navigation a {
-        color: var(--primary-text);
-        text-decoration: none;
+    .two-column {
+        grid-template-columns: 2fr 1fr;
     }
 
 }

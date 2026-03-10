@@ -6,6 +6,7 @@
     --accent-3: #ccad8f; /* tan */
 
     --spacing: 20px;
+    --padding: 10px;
 }
 
 * {
@@ -32,7 +33,6 @@ header {
     align-items: center;
     justify-content: left;
     padding: 5px 10px;
-    border-bottom: solid 1px #ddd;
 }
 
 header img {
@@ -81,6 +81,18 @@ header span {
 
 .navigation ul {
     display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.navigation li {
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    color: var(--primary-text);
+    text-decoration: none;
 }
 
 main h1 {
@@ -89,15 +101,15 @@ main h1 {
 
 .two-column {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--spacing);
+    margin-bottom: var(--spacing);
 }
 
 section.card {
     background-color: var(--accent-2);
     /* padding: 20px; */
     border-radius: 8px;
-    margin-bottom: var(--spacing);
 }
 
 section.card h2 {
@@ -123,13 +135,14 @@ section.card img {
 .note {
     width: 100%;
     text-align: center;
+    padding: var(--padding);
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: var(--spacing);
-    padding: 10px 0;
+    padding: var(--padding) 0;
 }
 
 footer {
