@@ -5,13 +5,6 @@
         margin: 0 auto;
     }
 
-    header {
-        grid-template-columns: 24px auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .hamburger {
         display: none;
     }
