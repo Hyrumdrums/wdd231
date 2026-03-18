@@ -24,6 +24,8 @@
 body {
     background-color: var(--accent-3);
     color: var(--primary-text);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -31,6 +33,7 @@ body {
 header {
     background-color: var(--primary-color);
     padding: var(--padding);
+    width: 100%;
 }
 
 header div {
@@ -160,4 +163,38 @@ footer div {
     text-align: left;
     margin: 0;
     padding: 0 10px;
+}
+
+main {
+    padding: 0 var(--padding);
+    overflow-x: hidden;
+}
+
+#cards {
+    padding: var(--padding) 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing);
+    width: 100%;
+    max-width: 100%;
+}
+
+#cards section {
+    border: 1px solid var(--accent-4);
+    text-align: center;
+    background-color: var(--accent-4);
+    padding: var(--padding);
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#cards section img {
+    height: 65px;
+    width: auto;
+    max-width: 100%;
+}
+
+#cards section p, #cards section h2 {
+    font-size: 0.7rem;
 }

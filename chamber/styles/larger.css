@@ -1,9 +1,5 @@
 @media only screen and (min-width: 320px) {
 
-    header {
-        width: 100%;
-    }
-
     header div, main, nav, footer div {
         max-width: 900px;
         margin: 0 auto;
@@ -53,6 +49,10 @@
 
     footer div {
         padding: 10px 0;
+    }
+
+    #cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
 }

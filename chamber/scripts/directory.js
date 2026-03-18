@@ -11,8 +11,8 @@ function displayMembers(members) {
 
         const detailsElement = document.createElement('p');
         detailsElement.innerHTML = `Address: ${member.address}`;
-        detailsElement.innerHTML += `<br>Phone: ${member.phone}`;
-        detailsElement.innerHTML += `<br>Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+        detailsElement.innerHTML += `<br>${member.phone}`;
+        detailsElement.innerHTML += `<br><a href="${member.website}" target="_blank">${member.website}</a>`;
         
         const image = document.createElement('img');
         image.setAttribute('src', `./images/members/${member.image}`);
@@ -21,9 +21,9 @@ function displayMembers(members) {
         image.setAttribute('width', '200');
         image.setAttribute('height', '200');
         
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(detailsElement);
-        card.appendChild(image);
 
         cards.appendChild(card);
 
