@@ -7,14 +7,66 @@
     <meta name="description" content="Directory of the Chamber of Commerce for Ogden City, including contact information and business listings.">
     <meta name="author" content="Dallin Layton">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <!-- facebook meta -->
     <meta property="og:title" content="Ogden City Chamber of Commerce Directory">
     <meta property="og:description" content="Directory of the Chamber of Commerce of the City of Ogden, including contact information and business listings.">
     <meta property="og:image" content="images/unionstation.webp">
     <meta property="og:url" content="https://hyrumdrums.github.io/wdd231/chamber/direcctory.html">
+
+    <script src="../scripts/getdates.js" defer></script>
 </head>
 <body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Site Logo" width="35" height="35">
+            <span>Ogden City Chamber of Commerce</span>
+            <button id="dark-toggle">&#9680;</button>
+            <button id="ham-btn" class="hamburger"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <p>
     
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusantium eum? Ipsum, dolores? Dolor mollitia incidunt, laboriosam earum laborum commodi qui possimus minima delectus reiciendis aspernatur eos voluptatum assumenda dolore!
+        </p>
+    </main>
+    <footer>
+        <div class="three-column">
+            <div class="contact-info">
+                <h2>Ogden Chamber of Commerce</h2>
+                <p>2501 Wall Ave, Ogden, UT 84401</p>
+                <!-- mailto -->
+                <p><a href="mailto:info@ogdenchamber.com">info@ogdenchamber.com</a></p>
+                <p><a href="tel:801-111-1111">801-111-1111</a></p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com" target="_blank" class="social-btn">
+                    <img src="images/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://x.com" target="_blank" class="social-btn">
+                    <img src="images/x.png" alt="X">
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn">
+                    <img src="images/linkedin-square-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="class-project">
+                <p>WDD231 Class Project</p>
+                <p><span id="currentYear"></span> | Dallin Layton | USA</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

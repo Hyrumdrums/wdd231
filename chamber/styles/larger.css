@@ -1,0 +1,55 @@
+@media only screen and (min-width: 320px) {
+
+    header {
+        width: 100%;
+    }
+
+    header div, main, nav, footer div {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #dark-toggle {
+        order: 4;
+    }
+
+    #ham-btn {
+        order: 3;
+    }
+
+    .navigation {
+        display: block;
+        background-color: var(--primary-color);
+    }
+    
+    .navigation ul {
+        /* no bullets */
+        list-style: none;
+        flex-direction: row;
+    }
+    
+    .navigation li {
+        padding: 10px;
+    }
+
+    .navigation li:hover {
+        background-color: var(--accent-1);
+    }
+
+    .three-column {
+        flex-direction: row;
+    }
+
+    .contact-info, .class-project {
+        padding: 0;
+    }
+
+    footer div {
+        padding: 10px 0;
+    }
+
+}
