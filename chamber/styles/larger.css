@@ -22,7 +22,9 @@
     }
 
     .navigation {
-        display: block;
+        display: block !important;
+        position: static !important;
+        width: auto !important;
         background-color: var(--primary-color);
     }
     
@@ -30,6 +32,7 @@
         /* no bullets */
         list-style: none;
         flex-direction: row;
+        display: flex !important;
     }
     
     .navigation li {
