@@ -1,0 +1,58 @@
+[
+	{
+		"name": "The Junction",
+		"address": "2415 25th St, Ogden, UT 84401",
+		"phone": "(801) 399-9200",
+		"website": "https://www.visitogden.com/neighborhoods/the-junction/",
+		"image": "junction.webp",
+		"membership": 3
+	},
+	{
+		"name": "Roosters Brewing Co",
+		"address": "253 25th St, Ogden, UT 84401",
+		"phone": "(801) 627-0700",
+		"website": "https://roostersbrewingco.com",
+		"image": "roosters.webp",
+		"membership": 2
+	},
+	{
+		"name": "The Art Box",
+		"address": "215 25th St, Ogden, UT 84401",
+		"phone": "(801) 399-ARTS",
+		"website": "https://artboxogden.com",
+		"image": "artbox.webp",
+		"membership": 1
+	},
+	{
+		"name": "Alleged",
+		"address": "201 25th St, Ogden, UT 84401",
+		"phone": "(801) 990-0692",
+		"website": "https://alleged25th.com",
+		"image": "alleged.webp",
+		"membership": 2
+	},
+	{
+		"name": "The Lucky Slice",
+		"address": "207 25th St, Ogden, UT 84401",
+		"phone": "(801) 627-2221",
+		"website": "https://www.theluckyslice.com/",
+		"image": "lucky.webp",
+		"membership": 1
+	},
+	{
+		"name": "Kaffe Mercantile",
+		"address": "227 25th St, Ogden, UT 84401",
+		"phone": "(801) 781-0300",
+		"website": "https://www.kaffemercantile.com/",
+		"image": "kaffe.webp",
+		"membership": 3
+	},
+	{
+		"name": "The Monarch",
+		"address": "455 25th St, Ogden, UT 84401",
+		"phone": "(801) 893-6603",
+		"website": "https://themonarchogden.com",
+		"image": "monarch.webp",
+		"membership": 2
+	}
+]
