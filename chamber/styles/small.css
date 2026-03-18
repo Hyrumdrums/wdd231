@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #a17c6b; /* dusty taupe */
+    --primary-color: #d6aa99; /* lighter dusty taupe */
     --primary-text: #000000; /* black */
     --accent-1: #5b7b7a; /* deep teal */
     --accent-2: #3c887e; /* dark cyan */
@@ -101,6 +101,10 @@ header div span {
 .navigation a {
     color: var(--primary-text);
     text-decoration: none;
+}
+
+a {
+    color: #142423; /* darker link color */
 }
 
 #dark-toggle {
