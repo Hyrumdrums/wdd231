@@ -170,6 +170,34 @@ main {
     overflow-x: hidden;
 }
 
+.view-toggle {
+    text-align: center;
+    padding-top: var(--padding);
+}
+
+.view-toggle a {
+    padding: var(--padding)
+}
+
+#cards table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#cards table th, #cards table td {
+    border: 1px solid var(--accent-4);
+    padding: 2px;
+}
+
+#cards table th {
+    background-color: var(--primary-color);
+}
+
+#cards table tbody tr:nth-child(even) td {
+    background-color: var(--accent-4);
+}
+
 #cards {
     padding: var(--padding) 0;
     display: grid;
