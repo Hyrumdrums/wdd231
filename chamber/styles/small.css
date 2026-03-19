@@ -105,6 +105,11 @@ header div span {
     background-color: var(--primary-color);
 }
 
+.navigation li.current {
+    background-color: var(--accent-1);
+    cursor: default;
+}
+
 .navigation a {
     color: var(--primary-text);
     text-decoration: none;

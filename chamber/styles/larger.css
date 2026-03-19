@@ -39,6 +39,11 @@
         background-color: var(--accent-1);
     }
 
+    .navigation li.current {
+        background-color: var(--accent-1);
+        cursor: default;
+    }
+
     .three-column {
         flex-direction: row;
     }
