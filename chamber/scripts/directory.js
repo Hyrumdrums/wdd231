@@ -4,8 +4,22 @@ const cards = document.querySelector('#cards');
 
 let membersData = [];
 
+function getStarBadge(membershipLevel) {
+    switch(membershipLevel) {
+        case 1:
+            return 'images/star-bronze.svg';
+        case 2:
+            return 'images/star-silver.svg';
+        case 3:
+            return 'images/star-gold.svg';
+        default:
+            return '';
+    }
+}
+
 function createCard(member) {
     const card = document.createElement('section');
+    card.classList.add('member-card');
     
     const name = document.createElement('h2');
     name.textContent = member.name;
@@ -22,9 +36,18 @@ function createCard(member) {
     image.setAttribute('width', '200');
     image.setAttribute('height', '200');
     
+    // Add star badge
+    const starBadge = document.createElement('img');
+    starBadge.setAttribute('src', getStarBadge(member.membership));
+    starBadge.setAttribute('alt', `${member.membership} star membership`);
+    starBadge.setAttribute('class', 'star-badge');
+    starBadge.setAttribute('width', '40');
+    starBadge.setAttribute('height', '40');
+    
     card.appendChild(image);
     card.appendChild(name);
     card.appendChild(detailsElement);
+    card.appendChild(starBadge);
 
     return card;
 }

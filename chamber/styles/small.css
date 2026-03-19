@@ -226,6 +226,16 @@ main {
     width: 100%;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.star-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 10;
 }
 
 #cards section img {
