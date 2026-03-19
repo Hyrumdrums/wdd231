@@ -34,6 +34,7 @@ header {
     background-color: var(--primary-color);
     padding: var(--padding);
     width: 100%;
+    position: relative;
 }
 
 header div {
@@ -81,6 +82,12 @@ header div span {
 /* nav */
 .navigation {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 1000;
 }
 
 .navigation.show {
