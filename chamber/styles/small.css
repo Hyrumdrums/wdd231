@@ -117,6 +117,7 @@ header div span {
 
 a {
     color: #142423; /* darker link color */
+    text-decoration: none;
 }
 
 #dark-toggle {
@@ -251,4 +252,31 @@ main {
 
 #cards section p, #cards section h2 {
     font-size: 0.7rem;
+}
+
+.hero-container {
+    position: relative;
+    width: calc(100% + 2 * var(--padding));
+    margin-left: calc(-1 * var(--padding));
+    margin-right: calc(-1 * var(--padding));
+}
+
+img.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a.cta-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    border: 1px solid var(--accent-4);
+}
+
+a.cta-button:hover {
+    background-color: var(--accent-1);
 }

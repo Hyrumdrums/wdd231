@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
-    <meta name="description" content="Directory of the Chamber of Commerce for Ogden City, including contact information and business listings.">
+    <title>Home</title>
+    <meta name="description" content="Home Page of the Chamber of Commerce for Ogden City, including contact information and business listings.">
     <meta name="author" content="Dallin Layton">
 
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -15,15 +15,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <!-- facebook meta -->
-    <meta property="og:title" content="Ogden City Chamber of Commerce Directory">
-    <meta property="og:description" content="Directory of the Chamber of Commerce of the City of Ogden, including contact information and business listings.">
+    <meta property="og:title" content="Ogden City Chamber of Commerce Home Page">
+    <meta property="og:description" content="Home Page of the Chamber of Commerce of the City of Ogden, including contact information and business listings.">
     <meta property="og:image" content="https://hyrumdrums.github.io/wdd231/chamber/images/unionstation.webp">
-    <meta property="og:url" content="https://hyrumdrums.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://hyrumdrums.github.io/wdd231/chamber/index.html">
 
     <script src="../scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <link rel="icon" href="favicon.ico"/>
 </head>
@@ -36,8 +37,8 @@
             <button id="ham-btn" class="hamburger"></button>
             <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li class="current">Directory</li>
+                    <li class="current">Home</li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
@@ -45,12 +46,28 @@
         </div>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <a id="grid-view" href="#">grid</a>
-            <a id="list-view" href="#">list</a>
+        <h1>Home</h1>
+        <div class="hero-container">
+            <img class="hero" src="images/union-station.jpg" alt="Ogden Union Station">
+            <a href="cta.html" class="cta-button">Get Started</a>
         </div>
-        <div id="cards"></div>
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <div id="events"></div>
+        </section>
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p>The current temperature in Ogden, Utah is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        <section>
+            <div>highlight 1</div>
+            <div>highlight 2</div>
+            <div>highlight 3</div>
+        </section>
     </main>
     <footer>
         <div class="three-column">
