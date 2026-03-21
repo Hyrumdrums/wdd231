@@ -66,5 +66,10 @@
         object-fit: cover;
         object-position: top;
     }
+
+    .weather-row {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
   
 }

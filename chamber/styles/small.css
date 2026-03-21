@@ -183,7 +183,6 @@ footer div {
 }
 
 main {
-    padding: 0 var(--padding);
     overflow-x: hidden;
 }
 
@@ -279,4 +278,26 @@ a.cta-button {
 
 a.cta-button:hover {
     background-color: var(--accent-1);
+}
+
+.weather-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing);
+    margin: var(--spacing) var(--padding);
+}
+
+.basic-card {
+    background-color: var(--accent-4);
+}
+
+.basic-card h2 {
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    padding: 2px 4px;
+}
+
+.basic-card p {
+    font-size: 0.9rem;
+    padding: 5px;
 }
