@@ -10,7 +10,7 @@ const lon = -111.9738;
 const units = 'imperial';
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
-const iconurl = `https://openweathermap.org/img/w/`;
+const iconurl = `https://openweathermap.org/img/wn/`;
 
 async function getCurrentWeather() {
     try {
@@ -41,7 +41,7 @@ async function getForecast() {
 }
 
 function buildIconUrl(iconCode) {
-    return `${iconurl}${iconCode}.png`;
+    return `${iconurl}${iconCode}@4x.png`;
 };
 
 function displayCurrentWeather(data) {
