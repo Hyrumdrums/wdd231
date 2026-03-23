@@ -1,4 +1,4 @@
-import { fetchMembers, createCard } from './member-cards.js';
+import { fetchMembers, createHighlightCard } from './member-cards.js';
 
 let membersData = [];
 
@@ -20,13 +20,12 @@ async function getMembers() {
 }
 
 function renderHighlightMembers(members) {
-    // TODO: Update selector to match your highlight section
     const highlightContainer = document.querySelector('#member-highlights');
     if (!highlightContainer) return;
     
     highlightContainer.innerHTML = '';
     members.forEach((member) => {
-        const element = createCard(member);
+        const element = createHighlightCard(member);
         highlightContainer.appendChild(element);
     });
 }

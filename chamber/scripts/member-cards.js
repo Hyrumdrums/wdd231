@@ -74,6 +74,57 @@ export function createRow(member) {
     return row;
 }
 
+export function createHighlightCard(member) {
+    const card = document.createElement('section');
+    card.classList.add('highlight-card');
+    
+    const name = document.createElement('h2');
+    name.textContent = member.name;
+    name.classList.add('highlight-name');
+    
+    const contentDiv = document.createElement('div');
+    contentDiv.classList.add('highlight-content');
+    
+    const logo = document.createElement('img');
+    logo.setAttribute('src', `./images/members/${member.logo}`);
+    logo.setAttribute('alt', `${member.name} logo`);
+    logo.setAttribute('loading', 'lazy');
+    logo.setAttribute('width', '100');
+    logo.setAttribute('height', '100');
+    
+    const detailsDiv = document.createElement('div');
+    const address = document.createElement('p');
+    address.textContent = member.address;
+    const phone = document.createElement('p');
+    phone.textContent = member.phone;
+    const website = document.createElement('p');
+    const link = document.createElement('a');
+    link.href = member.website;
+    link.target = '_blank';
+    link.textContent = member.website;
+    website.appendChild(link);
+    
+    detailsDiv.appendChild(address);
+    detailsDiv.appendChild(phone);
+    detailsDiv.appendChild(website);
+    
+    const starBadge = document.createElement('img');
+    starBadge.setAttribute('src', getStarBadge(member.membership));
+    starBadge.setAttribute('alt', `${member.membership} star membership`);
+    starBadge.setAttribute('class', 'star-badge highlight-star');
+    starBadge.setAttribute('width', '30');
+    starBadge.setAttribute('height', '30');
+    
+    contentDiv.appendChild(logo);
+    contentDiv.appendChild(detailsDiv);
+    
+    card.appendChild(name);
+    card.appendChild(contentDiv);
+    card.appendChild(starBadge);
+    
+    return card;
+}
+
 export async function fetchMembers() {
     try {
         const response = await fetch(MEMBERS_URL);

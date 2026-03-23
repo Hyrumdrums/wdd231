@@ -71,5 +71,8 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
 
+    #member-highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
   
 }
