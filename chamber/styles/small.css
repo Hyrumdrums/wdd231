@@ -1,7 +1,7 @@
 :root {
     --primary-color: #d6aa99; /* lighter dusty taupe */
     --primary-text: #000000; /* black */
-    --accent-1: #5b7b7a; /* deep teal */
+    --accent-1: #98cfcd; /* deep teal */
     --accent-2: #3c887e; /* dark cyan */
     --accent-3: #e0f2e9; /* honeydew */
     --accent-4: #ceb5a7; /* almond silk */
@@ -321,9 +321,13 @@ a.cta-button:hover {
     font-size: 0.9rem;
 }
 
-.highlight-content div {
+.highlight-details {
     min-width: 0;
     overflow-wrap: break-word;
+}
+
+.highlight-details p {
+    margin-bottom: 0.5rem;
 }
 
 .highlight-card {

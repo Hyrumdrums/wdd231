@@ -93,6 +93,7 @@ export function createHighlightCard(member) {
     logo.setAttribute('height', '100');
     
     const detailsDiv = document.createElement('div');
+    detailsDiv.classList.add('highlight-details');
     const address = document.createElement('p');
     address.textContent = member.address;
     const phone = document.createElement('p');
