@@ -5,14 +5,15 @@ let membersData = [];
 async function getMembers() {
     membersData = await fetchMembers();
     
-    membersData.filter(member => member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver')
+    const filteredMembers = membersData.filter(member => member.membership === 2 || member.membership === 3);
 
-    // randomly get a few
-    const filteredMembers = membersData;
     const randomMembers = [];
-    for (let i = 0; i < 3; i++) {
-        const randomMember = filteredMembers[Math.floor(Math.random() * filteredMembers.length)];
-        randomMembers.push(randomMember);
+    const availableMembers = [...filteredMembers];
+    
+    while (randomMembers.length < 3 && availableMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * availableMembers.length);
+        randomMembers.push(availableMembers[randomIndex]);
+        availableMembers.splice(randomIndex, 1);
     }
 
     // Render the filtered members
