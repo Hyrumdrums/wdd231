@@ -1,6 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const weatherFigure = document.querySelector('#weather-figure');
 const forecastDiv = document.querySelector('#forecast');
 
 // icky to keep here, but for a puplic api on free tier, it's not a huge deal.
@@ -52,9 +51,19 @@ function displayCurrentWeather(data) {
     const iconsrc = buildIconUrl(iconCode);
     const desc = data.weather[0].description;
     
+    // Create image and figcaption elements dynamically
+    const weatherIcon = document.createElement('img');
+    weatherIcon.id = 'weather-icon';
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    
+    const captionDesc = document.createElement('figcaption');
     captionDesc.textContent = `${desc}`;
+    
+    // Clear existing content and add new elements
+    weatherFigure.innerHTML = '';
+    weatherFigure.appendChild(weatherIcon);
+    weatherFigure.appendChild(captionDesc);
 }
 
 function displayForecast(data) {
