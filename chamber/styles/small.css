@@ -305,7 +305,7 @@ a.cta-button:hover {
 #member-highlights {
     padding: var(--spacing) var(--padding);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--spacing);
 }
 
@@ -330,6 +330,7 @@ a.cta-button:hover {
     position: relative;
     background-color: var(--accent-4);
     padding: var(--padding);
+    min-width: 280px;
 }
 
 .highlight-card h2 {
