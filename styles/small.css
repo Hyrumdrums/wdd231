@@ -188,3 +188,8 @@ footer {
     background-color: var(--accent-1);
     color: var(--primary-text);
 }
+
+/* dialog */
+::backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+}
