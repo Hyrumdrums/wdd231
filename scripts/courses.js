@@ -133,7 +133,7 @@ const courseDetails = document.getElementById('course-details');
 function displayCourseDetails(course) {
     courseDetails.innerHTML = '';
     courseDetails.innerHTML = `
-      <button id="closeModal">❌</button>
+      <button id="closeModal">&#x2715;</button>
       <h2>${course.subject} ${course.number}</h2>
       <h3>${course.title}</h3>
       <p><strong>Credits</strong>: ${course.credits}</p>
@@ -146,4 +146,11 @@ function displayCourseDetails(course) {
     closeModal.addEventListener("click", () => {
       courseDetails.close();
     });
-  }
+}
+
+courseDetails.addEventListener("click", (event) => {
+    // the outer element, not a child
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});

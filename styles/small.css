@@ -107,20 +107,25 @@ main h1 {
     margin-bottom: var(--spacing);
 }
 
-section.card {
+section.card, dialog {
     background-color: var(--accent-2);
     /* padding: 20px; */
     border-radius: 8px;
 }
 
-section.card h2 {
+section.card h2, dialog h2 {
     margin-bottom: 10px;
     background-color: var(--primary-color);
     padding: 10px 12px;
     text-align: center;
 }
 
-section.card p {
+dialog h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+section.card p, dialog p {
     padding: 0 10px 10px;
     line-height: 1.5;
 }
@@ -182,6 +187,7 @@ footer {
     padding: 10px;
     border-radius: 4px;
     text-align: center;
+    cursor: pointer;
 }
 
 #course_list div.not-completed {
@@ -192,4 +198,23 @@ footer {
 /* dialog */
 ::backdrop {
     background-color: rgb(0, 0, 0, 0.5);
+}
+
+dialog {
+    border: none;
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+dialog button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    font-size: 2rem;
+    background: none;
+    color: #000000;
+    cursor: pointer;
 }
