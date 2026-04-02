@@ -46,36 +46,38 @@
     </header>
     <main>
         <h1>Join</h1>
-        <form method="get" action="/thankyou.html">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            
-            <label>Organizational Title <input type="text" name="title" title="Your position or title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
-            
-            <label>Email Address <input type="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@email.com"></label>
-            
-            <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" title="Your mobile phone number"></label>
-            
-            <label>Business/Organization Name <input type="text" name="organization" required autocomplete="organization" title="Name of your business or organization"></label>
-            
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label><input type="radio" name="membership" value="np" required> NP Membership (for non profit organizations - no fee)</label>
-                <label><input type="radio" name="membership" value="bronze" required> Bronze Membership</label>
-                <label><input type="radio" name="membership" value="silver" required> Silver Membership</label>
-                <label><input type="radio" name="membership" value="gold" required> Gold Membership</label>
-            </fieldset>
+        <div class="form-container">
+            <form method="get" action="/thankyou.html">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                
+                <label>Organizational Title <input type="text" name="title" title="Your position or title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+                
+                <label>Email Address <input type="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@email.com"></label>
+                
+                <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" title="Your mobile phone number"></label>
+                
+                <label>Business/Organization Name <input type="text" name="organization" required autocomplete="organization" title="Name of your business or organization"></label>
+                
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="membership" value="np" required> NP Membership (for non profit organizations - no fee)</label>
+                    <label><input type="radio" name="membership" value="bronze" required> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver" required> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold" required> Gold Membership</label>
+                </fieldset>
+                
+                <label>Business/Organization Description <textarea name="description" title="Description of your business or organization"></textarea></label>
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+                
+                <input type="submit" value="Join the Chamber">
+            </form>
             
             <div class="membership-cards">
             </div>
-            
-            <label>Business/Organization Description <textarea name="description" title="Description of your business or organization"></textarea></label>
-            
-            <input type="hidden" name="timestamp" id="timestamp">
-            
-            <input type="submit" value="Join the Chamber">
-        </form>
+        </div>
         <dialog id="membership-details"></dialog>
     </main>
     <footer>

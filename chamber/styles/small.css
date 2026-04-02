@@ -391,3 +391,58 @@ a.cta-button:hover {
 .basic-card.gold {
     background-color: #ffd700;
 }
+
+.membership-cards a section {
+    padding: var(--padding);
+}
+
+::backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+dialog {
+    border: none;
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background-color: var(--accent-4);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+dialog button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+dialog h2 {
+    font-size: 3 rem;
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+dialog h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+dialog p {
+    font-size: 0.9rem;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+dialog ul {
+    padding: var(--padding);
+}
+
+dialog ul li {
+    margin-bottom: 5px;
+}

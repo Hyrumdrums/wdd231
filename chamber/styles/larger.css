@@ -74,5 +74,18 @@
     #member-highlights {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing);
+        align-items: center;
+    }
+
+    .membership-cards {
+        display: grid;
+        gap: 10px;
+        margin: 0 10px;
+    }
   
 }
