@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description" content="Join the Chamber of Commerce for Ogden City and become part of our business community.">
+    <meta name="author" content="Dallin Layton">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- facebook meta -->
+    <meta property="og:title" content="Join Ogden City Chamber of Commerce">
+    <meta property="og:description" content="Join the Chamber of Commerce of the City of Ogden and become part of our business community.">
+    <meta property="og:image" content="https://hyrumdrums.github.io/wdd231/chamber/images/unionstation.webp">
+    <meta property="og:url" content="https://hyrumdrums.github.io/wdd231/chamber/join.html">
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Site Logo" width="35" height="35">
+            <span>Ogden City Chamber of Commerce</span>
+            <button id="dark-toggle">&#9680;</button>
+            <button id="ham-btn" class="hamburger"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li class="current">Join</li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <form method="get" action="/thankyou.html">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            
+            <label>Organizational Title <input type="text" name="title" title="Your position or title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+            
+            <label>Email Address <input type="email" name="email" required autocomplete="email" title="Your email address" placeholder="example@email.com"></label>
+            
+            <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" title="Your mobile phone number"></label>
+            
+            <label>Business/Organization Name <input type="text" name="organization" required autocomplete="organization" title="Name of your business or organization"></label>
+            
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="np" required> NP Membership (for non profit organizations - no fee)</label>
+                <label><input type="radio" name="membership" value="bronze" required> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver" required> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold" required> Gold Membership</label>
+            </fieldset>
+            
+            <label>Business/Organization Description <textarea name="description" title="Description of your business or organization"></textarea></label>
+            
+            <input type="hidden" name="timestamp" id="timestamp">
+            
+            <input type="submit" value="Join the Chamber">
+        </form>
+    </main>
+    <footer>
+        <div class="three-column">
+            <div class="contact-info">
+                <h2>Ogden Chamber of Commerce</h2>
+                <p>2501 Wall Ave, Ogden, UT 84401</p>
+                <!-- mailto -->
+                <p><a href="mailto:info@ogdenchamber.com">info@ogdenchamber.com</a></p>
+                <p><a href="tel:801-111-1111">801-111-1111</a></p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com" target="_blank" class="social-btn">
+                    <img src="images/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://x.com" target="_blank" class="social-btn">
+                    <img src="images/x-twitter.png" alt="X social network">
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn">
+                    <img src="images/linkedin-square-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="class-project">
+                <p>WDD231 Class Project</p>
+                <p><span id="currentYear"></span> | Dallin Layton | USA</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
