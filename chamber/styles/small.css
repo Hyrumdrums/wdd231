@@ -392,6 +392,14 @@ a.cta-button:hover {
     background-color: #ffd700;
 }
 
+.solo-card {
+    margin: var(--spacing);
+}
+
+.solo-card h3 {
+    padding: var(--padding);
+}
+
 .membership-cards a section {
     padding: var(--padding);
 }
