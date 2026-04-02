@@ -381,7 +381,6 @@ a.cta-button:hover {
 
 .basic-card.bronze {
     background-color: #cd7f32;
-    color: white;
 }
 
 .basic-card.silver {
@@ -402,20 +401,18 @@ a.cta-button:hover {
 
 .membership-cards a section {
     padding: var(--padding);
-}
-
-.membership-cards a section {
-    animation: pulse-opacity 1s ease-in-out infinite alternate;
+    border: 2px solid transparent;
+    animation: pulse-border 1s ease-in-out infinite alternate;
 }
 
 .membership-cards a section:hover {
     animation: none;
-    opacity: 1;
+    border: 2px solid var(--primary-color);
 }
 
-@keyframes pulse-opacity {
-    from { opacity: 1; }
-    to { opacity: 0.6;}
+@keyframes pulse-border {
+    from { border-color: transparent; }
+    to { border-color: var(--primary-color); }
 }
 
 ::backdrop {
