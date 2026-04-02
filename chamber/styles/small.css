@@ -440,7 +440,7 @@ dialog button {
 }
 
 dialog h2 {
-    font-size: 3 rem;
+    font-size: 1.5rem;
     background-color: var(--primary-color);
     padding: var(--padding);
     margin-bottom: 10px;
