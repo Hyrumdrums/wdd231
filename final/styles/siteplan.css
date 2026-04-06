@@ -1,0 +1,13 @@
+section.colors ul {
+    list-style: none;
+}
+
+section.colors li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section.colors li span:first-child {
+    font-size: 1.8rem;
+}

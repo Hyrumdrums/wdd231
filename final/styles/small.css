@@ -1,0 +1,34 @@
+:root {
+    --primary-padding: 20px;
+    --secondary-padding: 10px;
+}
+
+header {
+    padding: var(--primary-padding);
+}
+
+h1 {
+    margin: 0 0 var(--secondary-padding) 0;
+}
+
+h2 {
+    margin: var(--primary-padding) 0 var(--secondary-padding) 0;
+}
+
+section {
+    padding: 0 var(--primary-padding);
+    margin: 0 0 var(--primary-padding) 0;
+}
+
+p {
+    margin: 0 0 var(--secondary-padding) 0;
+}
+
+ul {
+    margin: 0 0 var(--secondary-padding) 0;
+    padding-left: var(--primary-padding);
+}
+
+footer {
+    padding: var(--primary-padding);
+}
