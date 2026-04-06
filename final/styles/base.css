@@ -1,0 +1,15 @@
+/* https://coolors.co/363636-242f40-cca43b-e5e5e5-ffffff */
+
+:root {
+    --graphite: #363636;
+    --jet-black: #242f40;
+    --golden-bronze: #cca43b;
+    --alabaster-grey: #e5e5e5;
+    --white: #ffffff;
+    
+    --primary-color: var(--alabaster-grey);
+    --primary-text: var(--jet-black);
+    --secondary-color: var(--white);
+    --accent-1: var(--graphite);
+    --accent-2: var(--golden-bronze);
+}
