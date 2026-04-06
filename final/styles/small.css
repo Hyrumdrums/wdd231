@@ -5,6 +5,7 @@
 
 header {
     padding: var(--primary-padding);
+    margin: 0 0 var(--primary-padding) 0;
 }
 
 h1 {

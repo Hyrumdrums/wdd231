@@ -11,3 +11,10 @@ section.colors li {
 section.colors li span:first-child {
     font-size: 1.8rem;
 }
+
+section img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-position: center;
+}

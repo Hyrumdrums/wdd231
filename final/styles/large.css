@@ -6,7 +6,8 @@
     }
 
     header {
-        padding: var(--primary-padding);
+        padding: var(--primary-padding) var(--primary-padding) var(--primary-padding) var(--primary-padding);
+        margin: 0 auto var(--primary-padding) auto;
     }
 
     h1 {
