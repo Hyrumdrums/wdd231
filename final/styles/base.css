@@ -13,3 +13,7 @@
     --accent-1: var(--graphite);
     --accent-2: var(--golden-bronze);
 }
+
+body {
+    font-family: "PT Sans", sans-serif;
+}
