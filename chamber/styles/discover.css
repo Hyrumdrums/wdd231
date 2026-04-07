@@ -76,4 +76,8 @@
         grid-template-areas:
             "place1 place2 place3";
     }
+
+    #places img {
+        max-width: 250px;
+    }
 }
