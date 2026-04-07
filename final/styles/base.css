@@ -9,6 +9,7 @@
     
     --primary-color: var(--alabaster-grey);
     --primary-text: var(--jet-black);
+    --secondary-text: var(--white);
     --secondary-color: var(--white);
     --accent-1: var(--graphite);
     --accent-2: var(--golden-bronze);

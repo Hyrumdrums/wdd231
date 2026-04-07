@@ -8,6 +8,15 @@ section.colors li {
     gap: 0.5rem;
 }
 
+section.colors li:nth-last-child(-n+3) {
+    background-color: var(--primary-text);
+    color: var(--secondary-text);
+    padding: var(--secondary-padding);
+    border-radius: 4px;
+    margin-bottom: var(--secondary-padding);
+    max-width: fit-content;
+}
+
 section.colors li span:first-child {
     font-size: 1.8rem;
 }
