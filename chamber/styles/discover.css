@@ -1,0 +1,79 @@
+#places img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+}
+
+#places h2 {
+    text-align: center;
+}
+
+#places address {
+    padding: 0.5rem;
+}
+
+#places address, #places p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+#places button {
+    margin: 0.5rem auto;
+    display: block;
+}
+
+/* Small screens (320px to 640px) - Default */
+#places {
+    display: grid;
+    grid-template-areas:
+        "place1";
+    gap: 1rem;
+}
+
+#places .basic-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+}
+
+/* Medium screens (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #places {
+        grid-template-areas:
+            "place1";
+    }
+
+    #places .basic-card {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "image description"
+            "image address"
+            "image button";
+    }
+
+    #places address {
+        margin: 0.2rem;
+    }
+
+    #places {
+        margin: 0 1rem;
+    }
+}
+
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+    #places {
+        grid-template-areas:
+            "place1 place2 place3";
+    }
+}

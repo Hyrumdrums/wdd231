@@ -18,6 +18,7 @@ function createPlaceCard(place) {
 
     const title = document.createElement('h2');
     title.textContent = place.name;
+    title.style.gridArea = 'title';
 
     const figure = document.createElement('figure');
     const image = document.createElement('img');
@@ -25,15 +26,20 @@ function createPlaceCard(place) {
     image.alt = place.name;
     image.loading = 'lazy';
     figure.appendChild(image);
+    figure.style.gridArea = 'image';
 
     const address = document.createElement('address');
     address.textContent = place.address;
+    address.style.gridArea = 'address';
 
     const description = document.createElement('p');
     description.textContent = place.description;
+    description.style.gridArea = 'description';
 
     const button = document.createElement('button');
     button.textContent = 'Learn More';
+    button.classList.add('cta-button');
+    button.style.gridArea = 'button';
 
     placeDiv.appendChild(title);
     placeDiv.appendChild(figure);

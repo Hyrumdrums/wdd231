@@ -277,6 +277,13 @@ a.cta-button {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+.cta-button {
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    border: 1px solid var(--accent-4);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);    
+}
+
 a.cta-button:hover {
     background-color: var(--accent-1);
 }
