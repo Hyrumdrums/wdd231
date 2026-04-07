@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ogden - Chamber of Commerce</title>
+    <meta name="description" content="Discover points of interest and attractions in Ogden City, Utah.">
+    <meta name="author" content="Dallin Layton">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- facebook meta -->
+    <meta property="og:title" content="Discover Ogden - Chamber of Commerce">
+    <meta property="og:description" content="Discover points of interest and attractions in Ogden City, Utah.">
+    <meta property="og:image" content="https://hyrumdrums.github.io/wdd231/chamber/images/unionstation.webp">
+    <meta property="og:url" content="https://hyrumdrums.github.io/wdd231/chamber/discover.html">
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Site Logo" width="35" height="35">
+            <span>Ogden City Chamber of Commerce</span>
+            <button id="dark-toggle">&#9680;</button>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                    <li class="current">Discover</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Discover Ogden</h1>
+        <div id="places">
+        </div>
+    </main>
+    <footer>
+        <div class="three-column">
+            <div class="contact-info">
+                <h2>Ogden Chamber of Commerce</h2>
+                <p>2501 Wall Ave, Ogden, UT 84401</p>
+                <!-- mailto -->
+                <p><a href="mailto:info@ogdenchamber.com">info@ogdenchamber.com</a></p>
+                <p><a href="tel:801-111-1111">801-111-1111</a></p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com" target="_blank" class="social-btn">
+                    <img src="images/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://x.com" target="_blank" class="social-btn">
+                    <img src="images/x-twitter.png" alt="X social network">
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn">
+                    <img src="images/linkedin-square-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="class-project">
+                <p>WDD231 Class Project</p>
+                <p><span id="currentYear"></span> | Dallin Layton | USA</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
