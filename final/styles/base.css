@@ -20,12 +20,12 @@ body {
     color: var(--primary-text);
 }
 
-header {
+header > div {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-section {
+section, header > div {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 4px;

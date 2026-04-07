@@ -5,9 +5,8 @@
         margin: 0 auto;
     }
 
-    header {
-        padding: var(--primary-padding) var(--primary-padding) var(--primary-padding) var(--primary-padding);
-        margin: 0 auto var(--primary-padding) auto;
+    header > div {
+        margin: 0 auto 0 auto;
     }
 
     h1 {
@@ -15,11 +14,11 @@
     }
 
     h2 {
-        margin: var(--primary-padding) 0 var(--secondary-padding) 0;
+        /* margin: var(--primary-padding) 0 var(--secondary-padding) 0; */
     }
 
     section {
-        padding: 0 var(--primary-padding);
+        /* padding: 0 var(--primary-padding); */
         margin: 0 0 var(--primary-padding) 0;
     }
 

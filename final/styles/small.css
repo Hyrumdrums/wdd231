@@ -4,8 +4,17 @@
 }
 
 header {
+    padding: var(--primary-padding) 0;
+    margin: 0;
+}
+
+header > div {
+    padding: 0 var(--primary-padding);
+}
+
+/* A little top and bottom padding */
+section, header > div {
     padding: var(--primary-padding);
-    margin: 0 0 var(--primary-padding) 0;
 }
 
 h1 {
@@ -13,12 +22,17 @@ h1 {
 }
 
 h2 {
-    margin: var(--primary-padding) 0 var(--secondary-padding) 0;
+    margin-top: 0;
+    margin-bottom: var(--secondary-padding);
 }
 
 section {
-    padding: 0 var(--primary-padding);
+    /* padding: 0 var(--primary-padding); */
     margin: 0 0 var(--primary-padding) 0;
+}
+
+section:first-of-type h2 {
+    margin-top: 0;
 }
 
 p {
