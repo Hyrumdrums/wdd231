@@ -1,4 +1,5 @@
 import { ogdenPointsOfInterest } from './places.mjs';
+import { displayVisitMessage } from './lastvisit.mjs';
 
 function renderPlaces() {
     const placesContainer = document.querySelector('#places');
@@ -51,3 +52,4 @@ function createPlaceCard(place) {
 }
 
 renderPlaces();
+displayVisitMessage();

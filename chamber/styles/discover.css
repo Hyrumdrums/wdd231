@@ -1,3 +1,19 @@
+#visit-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-1);
+    border: 1px solid var(--accent-4);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#visit-message {
+    display: none;
+}
+
 #places img {
     width: 300px;
     height: 200px;
@@ -50,6 +66,7 @@
     #places {
         grid-template-areas:
             "place1";
+        margin: 0 1rem;
     }
 
     #places .basic-card {
@@ -65,8 +82,8 @@
         margin: 0.2rem;
     }
 
-    #places {
-        margin: 0 1rem;
+    #places img {
+        margin-left: var(--padding)
     }
 }
 
