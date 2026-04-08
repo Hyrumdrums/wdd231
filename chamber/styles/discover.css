@@ -97,4 +97,9 @@
     #places img {
         max-width: 250px;
     }
+
+    #places img:hover {
+        transform: scale(1.06);
+        transition: transform 0.4s ease;
+    }
 }
