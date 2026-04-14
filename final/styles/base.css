@@ -21,12 +21,7 @@ body {
     color: var(--primary-text);
 }
 
-header > div {
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-section, header > div {
+section, header > div, footer {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 4px;

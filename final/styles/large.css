@@ -1,12 +1,19 @@
 @media only screen and (min-width: 560px) {
     
-    header, main, footer {
+    body {
+        display: flex;
+        flex-direction: column;
         max-width: 900px;
         margin: 0 auto;
+        gap: var(--primary-padding);
     }
 
-    header > div {
-        margin: 0 auto 0 auto;
+    header, main, footer {
+        margin: 0;
+    }
+
+    header > div, main, footer {
+        padding: var(--primary-padding);
     }
 
     h1 {
@@ -33,5 +40,17 @@
 
     footer {
         padding: var(--primary-padding);
+    }
+    
+    .three-column {
+        flex-direction: row;
+    }
+    
+    .contact-info, .class-project {
+        padding: 0;
+    }
+    
+    footer div {
+        padding: 10px 0;
     }
 }
