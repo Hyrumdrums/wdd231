@@ -25,6 +25,7 @@
 
     <!-- scripts -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -32,6 +33,14 @@
     <header>
         <div>
             <h1>Visit Carlsbad Caverns</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current">Visit</li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
