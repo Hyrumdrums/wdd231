@@ -12,7 +12,7 @@
         margin: 0;
     }
 
-    header > div, main, footer {
+    header > div, footer {
         padding: var(--primary-padding);
     }
 
@@ -52,5 +52,23 @@
     
     footer div {
         padding: 10px 0;
+    }
+
+    main {
+        display: flex;
+        gap: var(--primary-padding);
+        align-items: flex-start;
+    }
+
+    .intro {
+        flex: 2;
+    }
+
+    .main-image {
+        flex: 1;
+    }
+
+    .main-image figure {
+        margin: 0;
     }
 }
