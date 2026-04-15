@@ -32,11 +32,6 @@ h2 {
     margin-bottom: var(--secondary-padding);
 }
 
-section {
-    /* padding: 0 var(--primary-padding); */
-    margin: 0 0 var(--primary-padding) 0;
-}
-
 .gallery {
     margin-bottom: 0;
 }
@@ -185,4 +180,75 @@ footer {
 
 .navigation li:last-child {
     border-bottom: none;
+}
+
+.visit-content {
+    display: grid;
+    grid-template-areas:
+        "getting-there"
+        "lodging"
+        "cave"
+        "form";
+    gap: var(--primary-padding);
+}
+
+.getting-there {
+    grid-area: getting-there;
+}
+
+.lodging {
+    grid-area: lodging;
+}
+
+.questions-form {
+    grid-area: form;
+}
+
+.form-container {
+    padding: var(--primary-padding);
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    padding-top: .2rem;
+}
+
+form input[type=text],
+form input[type=email],
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid var(--primary-text);
+    border-radius: 4px;
+    border-left-width: 5px;
+    font-size: 1rem;
+    width: 250px;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    appearance: none;
+    background-color: var(--primary-color);
+}
+
+form textarea {
+    width: 250px;
+    height: 100px;
+    resize: vertical;
 }

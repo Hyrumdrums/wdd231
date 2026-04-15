@@ -37,8 +37,7 @@
         /* margin: var(--primary-padding) 0 var(--secondary-padding) 0; */
     }
 
-    section {
-        /* padding: 0 var(--primary-padding); */
+    .top-content {
         margin: 0 0 var(--primary-padding) 0;
     }
 
@@ -114,5 +113,12 @@
 
     .navigation li:hover {
         background-color: var(--primary-color);
+    }
+
+    .visit-content {
+        grid-template-areas:
+            "getting-there getting-there"
+            "lodging form"
+            "cave form";
     }
 }
