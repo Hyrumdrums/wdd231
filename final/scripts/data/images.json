@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "image": "bats-1.webp",
+      "location": "Natural Entrance",
+      "type": "Wildlife",
+      "description": "Mass bat emergence at sunset.",
+      "funFact": "Brazilian free-tailed bats can exit the cave in spiraling columns for up to 20 minutes."
+    },
+    {
+      "id": 2,
+      "image": "bats-2.webp",
+      "location": "Natural Entrance",
+      "type": "Wildlife",
+      "description": "Closer look at bats exiting the cavern.",
+      "funFact": "These bats can fly over 100 miles in a single night to hunt insects."
+    },
+    {
+      "id": 3,
+      "image": "big-room-1.webp",
+      "location": "Big Room",
+      "type": "Chamber",
+      "description": "Wide view of the largest cave chamber.",
+      "funFact": "The Big Room is over 8 acres in size, making it one of the largest cave rooms in North America."
+    },
+    {
+      "id": 4,
+      "image": "big-room-2.webp",
+      "location": "Big Room",
+      "type": "Chamber",
+      "description": "Detailed formations inside the Big Room.",
+      "funFact": "The cave maintains a constant temperature of about 56°F year-round."
+    },
+    {
+      "id": 5,
+      "image": "entrance-1.webp",
+      "location": "Natural Entrance",
+      "type": "Entrance",
+      "description": "Looking down into the cave opening.",
+      "funFact": "The natural entrance drops approximately 750 feet into the cavern system."
+    },
+    {
+      "id": 6,
+      "image": "entrance-2.webp",
+      "location": "Entrance Trail",
+      "type": "Trail",
+      "description": "Winding path leading into the cavern.",
+      "funFact": "Visitors descend over a mile of paved trail to reach the Big Room."
+    },
+    {
+      "id": 7,
+      "image": "entrance-3.webp",
+      "location": "Natural Entrance",
+      "type": "Entrance",
+      "description": "Wide opening of the cave from below.",
+      "funFact": "The cave formed through sulfuric acid dissolving limestone rather than surface water erosion."
+    },
+    {
+      "id": 8,
+      "image": "formations-1.webp",
+      "location": "Big Room",
+      "type": "Formation",
+      "description": "Cluster of mineral cave formations.",
+      "funFact": "Cave formations can take hundreds of thousands of years to grow just a few feet."
+    },
+    {
+      "id": 9,
+      "image": "formations-2.webp",
+      "location": "Big Room",
+      "type": "Formation",
+      "description": "Close-up of textured mineral deposits.",
+      "funFact": "Mineral colors come from iron, manganese, and other trace elements."
+    },
+    {
+      "id": 10,
+      "image": "old-ladder.webp",
+      "location": "Historic Access",
+      "type": "History",
+      "description": "Original ladder used by early explorers.",
+      "funFact": "Early explorer Jim White used homemade ladders in the early 1900s to enter the caverns."
+    },
+    {
+      "id": 11,
+      "image": "railing-1.webp",
+      "location": "Big Room Trail",
+      "type": "Trail",
+      "description": "Modern pathway with safety railings.",
+      "funFact": "The Big Room trail loop is approximately 1.25 miles long."
+    },
+    {
+      "id": 12,
+      "image": "railing-2.webp",
+      "location": "Big Room Trail",
+      "type": "Trail",
+      "description": "Illuminated walkway through formations.",
+      "funFact": "Electric lighting was installed in the 1930s to improve visitor access and safety."
+    },
+    {
+      "id": 13,
+      "image": "stalactites-1.webp",
+      "location": "Big Room",
+      "type": "Formation",
+      "description": "Hanging stalactite formations.",
+      "funFact": "Stalactites form from mineral-rich water dripping from the ceiling over long periods of time."
+    },
+    {
+      "id": 14,
+      "image": "tunnel-1.webp",
+      "location": "Lower Caverns",
+      "type": "Passage",
+      "description": "Narrow tunnel within the cave system.",
+      "funFact": "Carlsbad Caverns National Park contains over 119 known caves."
+    },
+    {
+      "id": 15,
+      "image": "amphitheater-1.webp",
+      "location": "Bat Flight Amphitheater",
+      "type": "Point of Interest",
+      "description": "Seating area for watching bat flights.",
+      "funFact": "Rangers host nightly programs here during bat season to explain bat behavior and ecology."
+    }
+]

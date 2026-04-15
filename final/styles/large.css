@@ -59,7 +59,7 @@
         padding: 10px 0;
     }
 
-    main {
+    .top-content {
         display: flex;
         gap: var(--primary-padding);
         align-items: flex-start;
@@ -73,8 +73,12 @@
         flex: 1;
     }
 
-    .main-image figure {
+    .main-image figure, .gallery figure {
         margin: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .hamburger {
