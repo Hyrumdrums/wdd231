@@ -5,7 +5,7 @@
 
 header {
     padding: 0;
-    margin: 0;
+    margin: 0 0 var(--primary-padding) 0;
 }
 
 header > div {
@@ -35,6 +35,25 @@ h2 {
 section {
     /* padding: 0 var(--primary-padding); */
     margin: 0 0 var(--primary-padding) 0;
+}
+
+.gallery {
+    margin-bottom: 0;
+}
+
+/* fix mobile spacing */
+@media only screen and (max-width: 559px) {
+    .gallery {
+        margin-bottom: var(--primary-padding);
+    }
+    
+    .main-image figure {
+        padding: 0 var(--primary-padding);
+    }
+    
+    .gallery figure {
+        margin: 0;
+    }
 }
 
 section:first-of-type h2 {
@@ -67,7 +86,7 @@ footer {
 }
 
 .main-image figure {
-    margin: 0;
+    margin: 0 0 var(--primary-padding) 0;
 }
 
 .main-image img {

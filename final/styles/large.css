@@ -7,8 +7,16 @@
         margin: 0 auto;
         gap: var(--primary-padding);
     }
+    
+    main {
+        margin-bottom: 0;
+    }
 
     header, main, footer {
+        margin: 0;
+    }
+    
+    .main-image figure {
         margin: 0;
     }
 
