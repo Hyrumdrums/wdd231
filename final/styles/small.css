@@ -104,6 +104,7 @@ footer {
 .gallery img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .skeleton-img {
@@ -122,6 +123,19 @@ footer {
 @keyframes loading {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
+}
+
+.gallery figure {
+    position: relative;
+}
+
+.gallery figure.liked .heart::before {
+    content: "\2665";
+    color: red;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 3rem;
 }
 
 .hamburger {
