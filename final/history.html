@@ -26,6 +26,7 @@
     <!-- scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/timeline.mjs" type="module"></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -44,7 +45,81 @@
         </div>
     </header>
     <main>
+        <section class="timeline">
+            <h2>Timeline</h2>
+            <ul>
+                <li><strong>Prehistoric (12,000+ years ago)</strong><br>
+                Indigenous peoples lived in the area; pictographs near the cave entrance show early human awareness of the caverns.</li>
+                
+                <li><strong>1883 (possible early sighting)</strong><br>
+                A young boy is reportedly lowered into the cave, though exploration was limited.</li>
+                
+                <li data-image="images/cave/old-ladder.webp"><strong>1898 – First major exploration</strong><br>
+                Jim White enters the cave using a homemade wire ladder and begins mapping and naming formations.
+                <img src="images/cave/old-ladder.webp" alt="Original ladder" class="timeline-thumb"></li>
+                
+                <li data-image="images/cave/bats-1.webp"><strong>1903 – Guano mining begins</strong><br>
+                The cave is commercially used for bat guano (fertilizer), helping expand exploration inside.
+                <img src="images/cave/bats-1.webp" alt="Bat emergence" class="timeline-thumb"></li>
+                
+                <li><strong>1915–1918 – First photographs</strong><br>
+                Ray V. Davis photographs the cave, bringing national attention.</li>
+                
+                <li><strong>1923 – National Monument established</strong><br>
+                President Calvin Coolidge designates it Carlsbad Cave National Monument.</li>
+                
+                <li><strong>1925 – First visitor access improvements</strong><br>
+                Wooden stairs and trails are built, replacing dangerous guano bucket entry.</li>
+                
+                <li><strong>1927 – Electric lighting installed</strong><br>
+                Early lighting systems allow safer and more practical tour visits.</li>
+                
+                <li><strong>1930 – National Park status</strong><br>
+                Officially becomes Carlsbad Caverns National Park.</li>
+                
+                <li><strong>1931–1932 – Elevator construction</strong><br>
+                First elevator shaft blasted and installed, allowing easy access 750 feet underground.</li>
+                
+                <li><strong>1932 – Visitor center opens</strong><br>
+                Includes elevators, cafeteria, and improved infrastructure for tourism.</li>
+                
+                <li data-image="images/cave/railing-1.webp"><strong>1930s–1940s – Major infrastructure work</strong><br>
+                The Civilian Conservation Corps builds roads, railings, rock walls, and trails inside and outside the cave.
+                <img src="images/cave/railing-1.webp" alt="Cave railings" class="timeline-thumb"></li>
+                
+                <li data-image="images/cave/tunnel-1.webp"><strong>1950s – Trail modernization</strong><br>
+                Dirt paths replaced with paved walking trails and improved railings for safety.
+                <img src="images/cave/tunnel-1.webp" alt="Cave tunnel" class="timeline-thumb"></li>
+                
+                <li><strong>1954–1955 – Second elevator system</strong><br>
+                Larger elevators installed to handle increasing visitor traffic.</li>
+                
+                <li><strong>1959 – Modern visitor center completed</strong><br>
+                Central hub for tours and park operations.</li>
+                
+                <li><strong>1963 – Bat Flight Amphitheater built</strong><br>
+                Seating added for viewing the famous bat flights at the cave entrance.</li>
+                
+                <li><strong>1972 – Self-guided tours introduced</strong><br>
+                Visitors can explore more freely instead of only guided tours.</li>
+                
+                <li><strong>1970s – Elevator and lighting upgrades</strong><br>
+                Systems modernized; emergency lighting added.</li>
+                
+                <li><strong>1995 – UNESCO World Heritage Site</strong><br>
+                Recognized globally for natural significance.</li>
+                
+                <li><strong>2000s–present – Continued upgrades</strong><br>
+                Elevator systems, visitor facilities, and preservation efforts updated for modern tourism.</li>
+            </ul>
+        </section>
     </main>
+    
+    <dialog id="image-modal" class="timeline-modal">
+        <img id="modal-image" src="" alt="Historical cave image">
+        <button class="close-modal">×</button>
+    </dialog>
+    
     <footer>
         <div class="three-column">
             <div class="contact-info">

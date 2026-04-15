@@ -43,7 +43,7 @@ section {
 
 /* fix mobile spacing */
 @media only screen and (max-width: 559px) {
-    .gallery {
+    .gallery, .timeline {
         margin-bottom: var(--primary-padding);
     }
     
