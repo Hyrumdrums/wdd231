@@ -1,11 +1,7 @@
-:root {
-    --primary-padding: 20px;
-    --secondary-padding: 10px;
-}
 
 header {
     padding: 0;
-    margin: 0 0 var(--primary-padding) 0;
+    margin: 0;
 }
 
 header > div {
@@ -19,6 +15,11 @@ header > div {
 /* A little top and bottom padding */
 section {
     padding: var(--primary-padding);
+    margin: 0;
+}
+
+main {
+    margin: 0;
 }
 
 h1 {
@@ -32,13 +33,9 @@ h2 {
     margin-bottom: var(--secondary-padding);
 }
 
-.gallery {
-    margin-bottom: 0;
-}
-
 /* fix mobile spacing */
 @media only screen and (max-width: 559px) {
-    .gallery, .timeline {
+    .gallery {
         margin-bottom: var(--primary-padding);
     }
     
@@ -66,6 +63,7 @@ ul {
 
 footer {
     padding: var(--primary-padding);
+    margin: 0;
 }
 
 /* Footer */
@@ -94,6 +92,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--primary-padding);
+    margin-bottom: 0;
 }
 
 .gallery img {

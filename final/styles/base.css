@@ -13,12 +13,18 @@
     --secondary-color: var(--white);
     --accent-1: var(--graphite);
     --accent-2: var(--golden-bronze);
+    
+    --primary-padding: 20px;
+    --secondary-padding: 10px;
 }
 
 body {
     font-family: "PT Sans", sans-serif;
     background-color: var(--primary-color);
     color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--primary-padding);
 }
 
 section, header > div, footer {
