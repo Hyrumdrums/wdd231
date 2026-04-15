@@ -74,8 +74,9 @@ footer {
 }
 
 .center-links {
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .main-image figure {
